@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Gb;
+  src: url(./GmarketSansTTFBold.ttf) format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gm;
+  src: url(./GmarketSansTTFMedium.ttf) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gl;
+  src: url(./GmarketSansTTFLight.ttf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
