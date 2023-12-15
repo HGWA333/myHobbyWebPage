@@ -8,7 +8,7 @@ const ThemeToggleProvider = ({ children }) => {
   const dispatch = useDispatch();
   const currentTheme = useSelector((state) => state.theme.currentTheme);
   const toggleThemeHandler = () => {
-    dispatch(toggleTheme()); // Redux 액션 디스패치
+    dispatch(toggleTheme());
   };
 
   // const [theme, setTheme] = useState("light"); // 초기 테마 설정
