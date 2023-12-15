@@ -55,16 +55,16 @@ const MenuBar = ({
   return (
     <>
       <ModalStyle ref={modalRef}>
-        <ItemImg imageurl={img3} className="FontB" onClick={aboutPage}>
+        <ItemImg imageurl={({ theme }) => theme.img1} className="FontB" onClick={aboutPage}>
           About
         </ItemImg>
-        <ItemImg imageurl={img3} className="FontB" onClick={peoplePage}>
+        <ItemImg imageurl={({ theme }) => theme.img1} className="FontB" onClick={peoplePage}>
           People
         </ItemImg>
-        <ItemImg imageurl={img3} className="FontB" onClick={servicePage}>
+        <ItemImg imageurl={({ theme }) => theme.img1} className="FontB" onClick={servicePage}>
           Service
         </ItemImg>
-        <ItemImg imageurl={img4} className="FontB" onClick={testPage1}>
+        <ItemImg imageurl={({ theme }) => theme.img1} className="FontB" onClick={testPage1}>
           TestPage
         </ItemImg>
       </ModalStyle>

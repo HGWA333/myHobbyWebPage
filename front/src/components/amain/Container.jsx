@@ -42,55 +42,6 @@ const DataProvider = ({ children }) => {
 };
 
 const MainContainer = () => {
-  const navigate = useNavigate();
-
-  const homeClick = () => {
-    navigate("/");
-  };
-  const serviceClick = () => {
-    navigate("/service");
-  };
-  const corpClick = () => {
-    navigate("/corp");
-  };
-  const aboutClick = () => {
-    navigate("/about");
-  };
-  const peopleClick = () => {
-    navigate("/people");
-  };
-  const Inspection1Click = () => {
-    navigate("/inspection1 ");
-  };
-  const Inspection2Click = () => {
-    navigate("/inspection2");
-  };
-  const BuildUpClick = () => {
-    navigate("/build");
-  };
-  const DiagnosisClick = () => {
-    navigate("/diagnosis");
-  };
-  const LegalClick = () => {
-    navigate("/legal");
-  };
-  const testPage1Click = () => {
-    navigate("/test1");
-  };
-
-  const routeHandlers = {
-    aboutClick: aboutClick,
-    corpClick: corpClick,
-    peopleClick: peopleClick,
-    Inspection1Click: Inspection1Click,
-    Inspection2Click: Inspection2Click,
-    BuildUpClick: BuildUpClick,
-    DiagnosisClick: DiagnosisClick,
-    LegalClick: LegalClick,
-    homeClick: homeClick,
-    serviceClick: serviceClick,
-    testPage1Click: testPage1Click,
-  };
   const [modalOpen, setModalOpen] = useState(0);
   useEffect(() => {
     if (modalOpen) {
@@ -324,6 +275,55 @@ const MainContainer = () => {
   };
   const scrollHandlers = {
     scrollToTop: scrollToTop,
+  };
+  const navigate = useNavigate();
+
+  const homeClick = () => {
+    navigate("/");
+  };
+  const serviceClick = () => {
+    navigate("/service");
+  };
+  const corpClick = () => {
+    navigate("/corp");
+  };
+  const aboutClick = () => {
+    navigate("/about");
+  };
+  const peopleClick = () => {
+    navigate("/people");
+  };
+  const Inspection1Click = () => {
+    navigate("/inspection1 ");
+  };
+  const Inspection2Click = () => {
+    navigate("/inspection2");
+  };
+  const BuildUpClick = () => {
+    navigate("/build");
+  };
+  const DiagnosisClick = () => {
+    navigate("/diagnosis");
+  };
+  const LegalClick = () => {
+    navigate("/legal");
+  };
+  const testPage1Click = () => {
+    navigate("/test1");
+  };
+
+  const routeHandlers = {
+    aboutClick: aboutClick,
+    corpClick: corpClick,
+    peopleClick: peopleClick,
+    Inspection1Click: Inspection1Click,
+    Inspection2Click: Inspection2Click,
+    BuildUpClick: BuildUpClick,
+    DiagnosisClick: DiagnosisClick,
+    LegalClick: LegalClick,
+    homeClick: homeClick,
+    serviceClick: serviceClick,
+    testPage1Click: testPage1Click,
   };
   return (
     <>

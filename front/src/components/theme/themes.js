@@ -1,3 +1,6 @@
+import img1 from "../../img/2.jpg";
+import img2 from "../../img/2.png";
+
 const lightTheme = {
   body: "#ffffff",
   text: "#000000",
@@ -17,6 +20,7 @@ const lightTheme = {
   border: `#0e1c2f`,
   border1: `#928171`,
   underline1: `#f3cd6c`,
+  img1: `${img1}`,
 };
 
 const darkTheme = {
@@ -38,6 +42,7 @@ const darkTheme = {
   border: `#928171`,
   border1: `#f1edd5`,
   underline1: `#EA5506`,
+  img1: `${img2}`,
 };
 
 export { lightTheme, darkTheme };
