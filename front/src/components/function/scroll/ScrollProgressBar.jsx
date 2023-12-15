@@ -26,7 +26,6 @@ const ScrollProgressBar = () => {
 
   return (
     <div style={{ height: "1000px" }}>
-      {/* 스크롤이 생기도록 충분한 내용을 넣어줍니다 */}
       <div style={{ width: "100%", height: "5px", backgroundColor: "#ccc" }}>
         <div
           style={{
