@@ -7,7 +7,7 @@ const ServiceComponent = () => {
         <div className="ServiceContentItem1">
           <ServiceItemBox1>
             <div>
-              <span className="FontB">PEOPLE</span>
+              <span className="FontB">Service</span>
               <span className="FontL">건축 안전을 이끄는 (주) 파드의 전문가들</span>
             </div>
           </ServiceItemBox1>

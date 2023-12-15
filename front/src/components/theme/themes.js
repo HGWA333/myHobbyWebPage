@@ -39,7 +39,7 @@ const darkTheme = {
   btn2: `#f3cd6c`,
   btn3: `#928171`,
   btn4: `#f3cd6c`,
-  border: `#928171`,
+  border: `#0e1c2f`,
   border1: `#f1edd5`,
   underline1: `#EA5506`,
   img1: `${img2}`,

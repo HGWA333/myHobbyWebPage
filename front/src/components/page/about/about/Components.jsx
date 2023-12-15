@@ -7,7 +7,7 @@ const AboutComponent = () => {
         <div className="AboutContentItem1">
           <AboutItemBox1>
             <div>
-              <span className="FontB">PEOPLE</span>
+              <span className="FontB">About</span>
               <span className="FontL">건축 안전을 이끄는 (주) 파드의 전문가들</span>
             </div>
           </AboutItemBox1>
@@ -457,7 +457,7 @@ const AboutItemBox2 = styled.div`
   flex-direction: row;
   align-items: flex-start;
   width: 88.5%;
-  background: ${({ theme }) => theme.btn3};
+  background: ${({ theme }) => theme.two};
   transition: color ${({ theme }) => theme.transition};
   padding: 10px;
   padding-top: 100px;
