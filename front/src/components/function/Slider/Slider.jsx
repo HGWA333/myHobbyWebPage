@@ -31,8 +31,8 @@ const Slider = () => {
       ))}
       <div className="BtnItem">
         {imgs.map((_, idx) => (
-          <div>
-            <button className="BtnClick" key={idx} onClick={() => selectImage(idx)} />
+          <div key={idx}>
+            <button className="BtnClick" onClick={() => selectImage(idx)} />
           </div>
         ))}
       </div>
