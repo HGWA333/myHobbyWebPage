@@ -12,6 +12,7 @@ import img5 from "../../img/2.jpg";
 import img6 from "../../img/2.png";
 
 const MobileComponent = ({
+  scrollToTop,
   LegalClick,
   DiagnosisClick,
   BuildUpClick,
@@ -23,6 +24,10 @@ const MobileComponent = ({
   setIsHovered,
   aosAnimation,
 }) => {
+  const serviceMan = () => {
+    serviceClick();
+    scrollToTop();
+  };
   return (
     <>
       <PcContent>
@@ -37,6 +42,7 @@ const MobileComponent = ({
               <div className="FontFixb">SERVICES</div>
               <div className="FontFixl">고객사와 동반 성장하는 안전진단전문기관</div>
             </div>
+
             <div className="ServiceItem" data-aos={aosAnimation} data-aos-offset="0">
               <ServiceItemImg imageurl={img1} onClick={Inspection1Click}>
                 <span className="FontB"> 건설현장 정기 안전 점검</span>
@@ -60,7 +66,7 @@ const MobileComponent = ({
                 <span className="FontB"> 법원감정</span>
                 <span className="FontM"> Legal Assessment</span>
               </ServiceItemImg>
-              <ServiceItemImg imageurl={img6} onClick={serviceClick}>
+              <ServiceItemImg imageurl={img6} onClick={serviceMan}>
                 <span className="FontB"> 서비스 페이지</span>
                 <span className="FontM"> Safety Inspection of Construction Site</span>
               </ServiceItemImg>
@@ -103,10 +109,17 @@ const MobileComponent = ({
                 </div>
               </div>
             </div>
-            <div className="CoreContentItem3" onClick={serviceClick}>
-              <span className="FontB"> 서비스 바로가기</span>
-              <span className="FontM"> Services</span>
-            </div>
+            <Tilt
+              className="parallax-effect-img-font"
+              options={tiltOptions}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <div className="CoreContentItem3" onClick={serviceMan}>
+                <span className="FontB"> 서비스 바로가기</span>
+                <span className="FontM"> Services</span>
+              </div>
+            </Tilt>
           </div>
           <div className="ImageContent" data-aos={aosAnimation}>
             <img src={img2} alt=""></img>
@@ -119,7 +132,7 @@ const MobileComponent = ({
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <div className="ServiceItemBox1" data-aos={aosAnimation} onClick={serviceClick}>
+              <div className="ServiceItemBox1" data-aos={aosAnimation} onClick={serviceMan}>
                 <Tilt
                   className="parallax-effect-img-font"
                   options={tiltOptions}
@@ -173,6 +186,8 @@ const PcContent = styled.div`
     transition: color ${({ theme }) => theme.transition};
     padding-top: 9rem;
     padding-bottom: 1.3rem;
+    margin-top: 40px;
+    margin-bottom: 300px;
     font-size: clamp(1rem, 4vw, 2rem);
   }
   & .ServiceContent {
@@ -192,7 +207,7 @@ const PcContent = styled.div`
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 400px;
 
     & > :nth-child(1) {
       align-self: center;

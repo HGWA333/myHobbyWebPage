@@ -100,6 +100,7 @@ const MainComponent = ({
                 path="/"
                 element={
                   <MobileComponent
+                    scrollToTop={scrollToTop}
                     data={data}
                     tiltOptions={tiltOptions}
                     setIsHovered={setIsHovered}
