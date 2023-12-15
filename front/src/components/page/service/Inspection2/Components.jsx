@@ -7,8 +7,8 @@ const Inspection2Component = () => {
         <div className="Inspection2ContentItem1">
           <Inspection2ItemBox1>
             <div>
-              <span className="FontB">Inspection2</span>
-              <span className="FontL">건축 안전을 이끄는 (주) 파드의 전문가들</span>
+              <span className="FontB">건축물 정기안전점검</span>
+              <span className="FontL">(주)파드의 기술철학이 녹아든 서비스 분야</span>
             </div>
           </Inspection2ItemBox1>
           <Inspection2ItemBox1>

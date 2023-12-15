@@ -8,7 +8,7 @@ const ServiceComponent = () => {
           <ServiceItemBox1>
             <div>
               <span className="FontB">Service</span>
-              <span className="FontL">건축 안전을 이끄는 (주) 파드의 전문가들</span>
+              <span className="FontL">(주)파드의 기술철학이 녹아든 서비스 분야</span>
             </div>
           </ServiceItemBox1>
           <ServiceItemBox1>
@@ -457,7 +457,7 @@ const ServiceItemBox2 = styled.div`
   flex-direction: row;
   align-items: flex-start;
   width: 88.5%;
-  background: ${({ theme }) => theme.btn3};
+  background: ${({ theme }) => theme.two};
   transition: color ${({ theme }) => theme.transition};
   padding: 10px;
   padding-top: 100px;

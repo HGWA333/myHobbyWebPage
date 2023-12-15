@@ -7,8 +7,8 @@ const LegalComponent = () => {
         <div className="LegalContentItem1">
           <LegalItemBox1>
             <div>
-              <span className="FontB">Legal</span>
-              <span className="FontL">건축 안전을 이끄는 (주) 파드의 전문가들</span>
+              <span className="FontB">법원감정</span>
+              <span className="FontL">(주)파드의 기술철학이 녹아든 서비스 분야</span>
             </div>
           </LegalItemBox1>
           <LegalItemBox1>
