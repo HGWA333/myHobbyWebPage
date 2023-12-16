@@ -323,6 +323,37 @@ const MainContainer = () => {
     serviceClick: serviceClick,
     testPage1Click: testPage1Click,
   };
+
+  const textData = [
+    {
+      title: "건설현장 정기안전점검",
+      color: `${({ theme }) => theme.text}`,
+    },
+    {
+      title: "건축물 정기안전점검",
+      color: `${({ theme }) => theme.text}`,
+    },
+    {
+      title: "빌드업 안심서비스",
+      color: `${({ theme }) => theme.text}`,
+    },
+    {
+      title: "건축물 하자진단",
+      color: `${({ theme }) => theme.text}`,
+    },
+    {
+      title: "법원감정",
+      color: `${({ theme }) => theme.text}`,
+    },
+  ];
+  const [serviceSelected, setServiceSelected] = useState(0);
+
+  const serviceHandlers = {
+    textData: textData,
+    serviceSelected: serviceSelected,
+    setServiceSelected: setServiceSelected,
+  };
+
   return (
     <>
       <MainComponent
@@ -335,6 +366,7 @@ const MainContainer = () => {
         tiltHandlers={tiltHandlers}
         menuBtnHandlers={menuBtnHandlers}
         scrollHandlers={scrollHandlers}
+        serviceHandlers={serviceHandlers}
       />
     </>
   );
