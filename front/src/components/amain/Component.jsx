@@ -121,7 +121,16 @@ const MainComponent = ({
               <Route path="/about" element={<AboutComponent />} />
               <Route path="/corp" element={<CorpComponent />} />
               <Route path="/people" element={<PeopleComponent />} />
-              <Route path="/service" element={<ServiceCompoent />} />
+              <Route
+                path="/service"
+                element={
+                  <ServiceCompoent
+                    textData={textData}
+                    serviceSelected={serviceSelected}
+                    setServiceSelected={setServiceSelected}
+                  />
+                }
+              />
               <Route path="/inspection1" element={<Inspection1Component />} />
               <Route path="/inspection2" element={<Inspection2Component />} />
               <Route path="/build" element={<BuildComponent />} />
