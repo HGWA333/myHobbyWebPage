@@ -115,6 +115,7 @@ const AboutComponent = () => {
                     </span>
                   </AboutItemTextCol>
                 </div>
+                <div></div>
               </div>
             </div>
           </AboutItemBox1>
