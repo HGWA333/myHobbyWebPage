@@ -287,14 +287,12 @@ const AboutItemBox1 = styled.div`
   padding: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
-  /* border-bottom: 1.7px solid red; */
+
   border-left: 2px solid ${({ theme }) => theme.border};
   & .FlexM {
     flex: 20%;
-    /* border: 1px solid red; */
   }
   & > div > span.MediumText {
-    /* border: 1px solid black; */
   }
   & .FlexCol {
     flex: 80%;
@@ -302,7 +300,6 @@ const AboutItemBox1 = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /* border: 1px solid red; */
   }
   & .FlexCol > .FlexRow {
     width: 100%;
@@ -310,11 +307,9 @@ const AboutItemBox1 = styled.div`
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
-    /* border: 1px solid red; */
   }
   & .FlexCol > .FlexRow > div {
     flex: 1;
-    /* border: 1px solid red; */
   }
   & .FlexCol > .BorderTop {
     width: 90%;
@@ -349,7 +344,6 @@ const AboutItemBox1 = styled.div`
     }
     & .FlexM {
       flex: 100%;
-      /* border: 1px solid red; */
     }
     & .FlexCol {
       flex: 100%;
@@ -357,7 +351,6 @@ const AboutItemBox1 = styled.div`
       flex-direction: column;
       justify-content: stretch;
       align-items: stretch;
-      /* border: 1px solid red; */
     }
     & .FlexCol > .FlexRow {
       flex: 1;
@@ -382,14 +375,12 @@ const AboutItemBox2 = styled.div`
   padding: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
-  /* border-bottom: 1.7px solid red; */
+
   border-left: 2px solid ${({ theme }) => theme.border};
   & .FlexM {
     flex: 20%;
-    /* border: 1px solid red; */
   }
   & > div > span.MediumText {
-    /* border: 1px solid black; */
   }
   & .BorderTop {
     padding-top: 1.5rem;
@@ -404,7 +395,6 @@ const AboutItemBox2 = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /* border: 1px solid red; */
   }
   & .FlexCol > .FlexRow {
     width: 100%;
@@ -412,11 +402,9 @@ const AboutItemBox2 = styled.div`
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
-    /* border: 1px solid red; */
   }
   & .FlexCol > .FlexRow > div {
     flex: 1;
-    /* border: 1px solid red; */
   }
   & .FlexRow {
   }
@@ -442,7 +430,6 @@ const AboutItemBox2 = styled.div`
     }
     & .FlexM {
       flex: 100%;
-      /* border: 1px solid red; */
     }
     & .FlexCol {
       flex: 100%;
@@ -450,7 +437,6 @@ const AboutItemBox2 = styled.div`
       flex-direction: column;
       justify-content: stretch;
       align-items: stretch;
-      /* border: 1px solid red; */
     }
     & .FlexCol > .FlexRow {
       flex: 1;

@@ -77,7 +77,7 @@ const PcComponent = ({
               <span className="FontB"> CORE VALUE</span>
               <span className="FontL"> 핵심가치</span>
             </div>
-            <div className="CoreContentItem2">
+            <div className="CoreContentItem2" data-aos={aosAnimation} data-aos-offset="0">
               <div className="CoreContentItem2Box">
                 <div className="CoreContentTextFlex">
                   <span className="FontB"> HONEST</span>
@@ -115,7 +115,7 @@ const PcComponent = ({
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <div className="CoreContentItem3" onClick={serviceMan}>
+              <div className="CoreContentItem3" data-aos={aosAnimation} onClick={serviceMan}>
                 <span className="FontB"> 서비스 바로가기</span>
                 <span className="FontM"> Services</span>
               </div>
@@ -337,8 +337,8 @@ const PcContent = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin-top: 80px;
-      margin-bottom: 240px;
+      margin-top: 250px;
+
       width: 100%;
 
       & > :nth-child(1) {
@@ -351,6 +351,7 @@ const PcContent = styled.div`
       }
     }
     & .CoreContentItem2 {
+      margin-top: 350px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -380,15 +381,15 @@ const PcContent = styled.div`
           }
 
           & > :nth-child(1) {
-            font-size: clamp(1.3rem, 2vw, 1.5rem);
+            font-size: clamp(1.3rem, 2vw, 1.7rem);
           }
           & > :nth-child(2) {
             padding-bottom: 16px;
-            font-size: clamp(0.7rem, 1.5vw, 1rem);
+            font-size: clamp(0.9rem, 1.7vw, 1.2rem);
           }
           & > :nth-child(4) {
             margin-top: 16px;
-            font-size: clamp(0.5rem, 1.2vw, 0.8rem);
+            font-size: clamp(0.6rem, 1.2vw, 0.86rem);
             letter-spacing: 0.3rem;
             line-height: 1.2rem;
           }
@@ -396,7 +397,8 @@ const PcContent = styled.div`
       }
     }
     & .CoreContentItem3 {
-      margin-top: 300px;
+      margin-top: 450px;
+      margin-bottom: 250px;
       flex: 1 1;
       flex-basis: auto;
       display: flex;
