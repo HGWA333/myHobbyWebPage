@@ -417,18 +417,18 @@ const ServiceItemBox2 = styled.div`
   }
 `;
 
-const ServiceItemTextRow = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  text-align: left;
-  width: 100%;
+// const ServiceItemTextRow = styled.div`
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   flex-direction: row;
+//   text-align: left;
+//   width: 100%;
 
-  @media (min-width: 768px) {
-    align-items: flex-start;
-  }
-`;
+//   @media (min-width: 768px) {
+//     align-items: flex-start;
+//   }
+// `;
 const ServiceItemTextCol = styled.div`
   display: flex;
   justify-content: flex-start;

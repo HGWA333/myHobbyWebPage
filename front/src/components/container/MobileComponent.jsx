@@ -4,12 +4,12 @@ import Tilt from "react-parallax-tilt";
 import "aos/dist/aos.css";
 import Slider from "../function/Slider/Slider";
 import "../../font/font.css";
-import img1 from "../../img/1.jpg";
+import img1 from "../../img/1.png";
 import img2 from "../../img/2.jpg";
-import img3 from "../../img/2.png";
-import img4 from "../../img/1.jpg";
+import img3 from "../../img/3.png";
+import img4 from "../../img/1.png";
 import img5 from "../../img/2.jpg";
-import img6 from "../../img/2.png";
+import img6 from "../../img/3.png";
 
 const MobileComponent = ({
   scrollToTop,
@@ -380,17 +380,19 @@ const PcContent = styled.div`
           }
 
           & > :nth-child(1) {
-            font-size: clamp(1.3rem, 2vw, 1.5rem);
+            font-size: clamp(1.7rem, 2vw, 1.8rem);
           }
           & > :nth-child(2) {
             padding-bottom: 16px;
-            font-size: clamp(0.7rem, 1.5vw, 1rem);
+            font-weight: 900;
+            font-size: clamp(0.9rem, 2vw, 1.4rem);
           }
           & > :nth-child(4) {
             margin-top: 16px;
-            font-size: clamp(0.5rem, 1.2vw, 0.8rem);
+            font-size: clamp(1rem, 2vw, 1.3rem);
             letter-spacing: 0.3rem;
-            line-height: 1.2rem;
+            line-height: 1.8;
+            font-weight: 500;
           }
         }
       }
@@ -490,8 +492,10 @@ const PcContent = styled.div`
   & .FontL {
     font-size: clamp(0.3rem, 1vw, 0.7rem);
     font-family: Gl;
+    font-weight: 600;
     align-self: flex-start;
     text-align: left;
+    margin-top: 10px;
     padding-top: 0.8rem;
   }
   & .FontL:hover {
@@ -524,7 +528,7 @@ const PcContent = styled.div`
       }
     }
     & .FontB {
-      font-size: clamp(1rem, 3vw, 1.5rem);
+      font-size: clamp(1.3rem, 2vw, 2rem);
       font-family: Gb;
       align-self: flex-start;
       text-align: left;
@@ -533,7 +537,8 @@ const PcContent = styled.div`
     & .FontM {
       flex: 1 1;
       font-family: Gl;
-      font-size: clamp(0.5rem, 2vw, 0.8rem);
+      font-size: clamp(0.9rem, 2vw, 1.3rem);
+      font-weight: 600;
       text-align: left;
       align-self: flex-start;
       position: relative;

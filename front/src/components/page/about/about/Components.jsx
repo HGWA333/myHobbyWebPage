@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "../../../../font/font.css";
-import img1 from "../../../../img/1.jpg";
+
 const AboutComponent = () => {
   return (
     <>
