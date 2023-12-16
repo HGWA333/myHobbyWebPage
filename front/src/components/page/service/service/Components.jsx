@@ -23,12 +23,8 @@ const ServiceComponent = ({ textData, serviceSelected, setServiceSelected }) => 
                       onClick={() => setServiceSelected(i)}
                       transition={{ fontSize: { duration: 0.3 } }}
                     >
-                      <div className="ServiceFont FontM PaddingL">
-                        {title}
-                        {i === serviceSelected && (
-                          <div className="underline" style={{ backgroundColor: `${({ theme }) => theme.text}` }} />
-                        )}
-                        {!(serviceSelected === 1 && i === 2) && <></>}
+                      <div className={`ServiceFont FontM PaddingL`}>
+                        <span className={` ${i === serviceSelected ? "UnderLine" : ""}`}> {title}</span>
                       </div>
                     </div>
                   );
@@ -462,7 +458,9 @@ const ServiceFlexRow = styled.div`
   flex-direction: row;
   text-align: center;
   width: 100%;
-
+  & .UnderLine {
+    border-bottom: 2px solid ${({ theme }) => theme.underline1};
+  }
   & .ServiceFlexR {
     flex: 1 1;
     flex-wrap: wrap;
