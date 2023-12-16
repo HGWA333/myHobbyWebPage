@@ -292,19 +292,29 @@ const MainContainer = () => {
     navigate("/people");
   };
   const Inspection1Click = () => {
-    navigate("/inspection1 ");
+    navigate("/service");
+    setServiceSelected(0);
+    scrollToTop();
   };
   const Inspection2Click = () => {
-    navigate("/inspection2");
+    navigate("/service");
+    setServiceSelected(1);
+    scrollToTop();
   };
   const BuildUpClick = () => {
-    navigate("/build");
+    navigate("/service");
+    setServiceSelected(2);
+    scrollToTop();
   };
   const DiagnosisClick = () => {
-    navigate("/diagnosis");
+    navigate("/service");
+    setServiceSelected(3);
+    scrollToTop();
   };
   const LegalClick = () => {
-    navigate("/legal");
+    navigate("/service");
+    setServiceSelected(4);
+    scrollToTop();
   };
   const testPage1Click = () => {
     navigate("/test1");
