@@ -10,8 +10,6 @@ const DataContext = createContext();
 
 // 데이터를 관리하는 Provider 컴포넌트
 const DataProvider = ({ children }) => {
-  console.log(children, "children");
-
   // 통신을 통해 받아온 데이터 state
   const [data, setData] = useState("");
 

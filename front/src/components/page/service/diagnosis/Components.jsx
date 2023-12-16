@@ -7,7 +7,7 @@ const DiagnosisComponent = () => {
         <div className="DiagnosisContentItem1">
           <DiagnosisItemBox1>
             <div>
-              <span className="FontB">Service</span>
+              <span className="FontB">건축물 하자진단</span>
               <span className="FontL">(주)파드의 기술철학이 녹아든 서비스 분야</span>
             </div>
           </DiagnosisItemBox1>

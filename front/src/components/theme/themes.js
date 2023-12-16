@@ -18,9 +18,10 @@ const lightTheme = {
   btn3: `#FBFBF6`,
   btn4: `#f1edd5`,
   border: `#0e1c2f`,
-  border1: `#928171`,
+  border1: `#FBFBF6`,
   underline1: `#f3cd6c`,
-  img1: `${img1}`,
+  underline2: `#EA5506`,
+  img1: img1,
 };
 
 const darkTheme = {
@@ -40,9 +41,10 @@ const darkTheme = {
   btn3: `#928171`,
   btn4: `#f3cd6c`,
   border: `#0e1c2f`,
-  border1: `#f1edd5`,
+  border1: `#0e1c2f`,
   underline1: `#EA5506`,
-  img1: `${img2}`,
+  underline2: `#f3cd6c`,
+  img1: img2,
 };
 
 export { lightTheme, darkTheme };

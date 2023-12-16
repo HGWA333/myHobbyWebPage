@@ -5,7 +5,7 @@ const PeopleComponent = () => {
     <>
       <PeopleContent>
         <div className="PeopleContentItem1">
-          <PeopleItemBox1>
+          <PeopleItemBox1 className="MarginB">
             <div>
               <span className="FontB">PEOPLE</span>
               <span className="FontL">건축 안전을 이끄는 (주) 파드의 전문가들</span>
@@ -13,43 +13,43 @@ const PeopleComponent = () => {
           </PeopleItemBox1>
           <PeopleItemBox1>
             <div className="FlexM">
-              <span className="MediumText">Executive Staff</span>
-              <span className="FontL">임원진</span>
+              <span className="FontBs">Executive Staff</span>
+              <span className="FontLs">임원진</span>
             </div>
             <div className="FlexCol">
               <div className="FlexRow">
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">방승호</span>
-                    <span className="MediumText">대표</span>
+                    <span className="LText">방승호</span>
+                    <span className="Mtext">대표</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Bang Seung-Ho</span>
-                    <span className="SmallText">CEO</span>
-                    <span className="SmallText">법원감정인 / 기 술 사</span>
-                    <span className="SmallText">한양대학교 스마트융합공학부 겸임교수</span>
+                    <span className="Stext">Bang Seung-Ho</span>
+                    <span className="Stext">CEO</span>
+                    <span className="Stext">법원감정인 / 기 술 사</span>
+                    <span className="Stext">한양대학교 스마트융합공학부 겸임교수</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">조철현</span>
-                    <span className="MediumText">사업기획부 전무</span>
+                    <span className="LText">조철현</span>
+                    <span className="Mtext">사업기획부 전무</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Cho Chul-Hyun</span>
-                    <span className="SmallText">CFO of Dev. Dept.</span>
-                    <span className="SmallText">법원감정인 / 건 축 사</span>
+                    <span className="Stext">Cho Chul-Hyun</span>
+                    <span className="Stext">CFO of Dev. Dept.</span>
+                    <span className="Stext">법원감정인 / 건 축 사</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">심종수</span>
-                    <span className="MediumText">영업부 이사</span>
+                    <span className="LText">심종수</span>
+                    <span className="Mtext">영업부 이사</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Shim Jong-Su</span>
-                    <span className="SmallText">Director of Sales Dept.</span>
-                    <span className="SmallText">법원감정인 / 기 술 사</span>
+                    <span className="Stext">Shim Jong-Su</span>
+                    <span className="Stext">Director of Sales Dept.</span>
+                    <span className="Stext">법원감정인 / 기 술 사</span>
                   </PeopleItemTextCol>
                 </div>
               </div>
@@ -57,78 +57,78 @@ const PeopleComponent = () => {
           </PeopleItemBox1>
           <PeopleItemBox2>
             <div className="FlexM">
-              <span className="MediumText">Tech Staff</span>
-              <span className="FontL">기술진</span>
+              <span className="FontBs">Tech Staff</span>
+              <span className="FontLs">기술진</span>
             </div>
             <div className="FlexCol">
               <div className="FlexRow">
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">박진수</span>
-                    <span className="MediumText">기술부 부장</span>
+                    <span className="LText">박진수</span>
+                    <span className="Mtext">기술부 부장</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Park Jin-Soo</span>
-                    <span className="SmallText">Manager Position</span>
-                    <span className="SmallText">건축기사</span>
-                    <span className="SmallText">건축목공기능사</span>
-                    <span className="SmallText">건축도장기능사</span>
+                    <span className="Stext">Park Jin-Soo</span>
+                    <span className="Stext">Manager Position</span>
+                    <span className="Stext">건축기사</span>
+                    <span className="Stext">건축목공기능사</span>
+                    <span className="Stext">건축도장기능사</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">박덕령</span>
-                    <span className="MediumText">기술부 부장</span>
+                    <span className="LText">박덕령</span>
+                    <span className="Mtext">기술부 부장</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Park Deok-Ryeong</span>
-                    <span className="SmallText">Manager Position</span>
-                    <span className="SmallText">건설안전산업기사</span>
+                    <span className="Stext">Park Deok-Ryeong</span>
+                    <span className="Stext">Manager Position</span>
+                    <span className="Stext">건설안전산업기사</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">김정음</span>
-                    <span className="MediumText">기술부 과장</span>
+                    <span className="LText">김정음</span>
+                    <span className="Mtext">기술부 과장</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Kim Jung-Eum</span>
-                    <span className="SmallText">Manager</span>
+                    <span className="Stext">Kim Jung-Eum</span>
+                    <span className="Stext">Manager</span>
                   </PeopleItemTextCol>
                 </div>
               </div>
               <div className="FlexRow">
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">강명규</span>
-                    <span className="MediumText">기술부 대리</span>
+                    <span className="LText">강명규</span>
+                    <span className="Mtext">기술부 대리</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Kang Myung-Gyu</span>
-                    <span className="SmallText">Manager Position</span>
-                    <span className="SmallText">건축기사</span>
-                    <span className="SmallText">건설안전산업기사</span>
-                    <span className="SmallText">소방안전기사</span>
+                    <span className="Stext">Kang Myung-Gyu</span>
+                    <span className="Stext">Manager Position</span>
+                    <span className="Stext">건축기사</span>
+                    <span className="Stext">건설안전산업기사</span>
+                    <span className="Stext">소방안전기사</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">조성구</span>
-                    <span className="MediumText">기술부 대리</span>
+                    <span className="LText">조성구</span>
+                    <span className="Mtext">기술부 대리</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Jo Sung-Gu</span>
-                    <span className="SmallText">Assistant Manager</span>
-                    <span className="SmallText">건설안전산업기사</span>
+                    <span className="Stext">Jo Sung-Gu</span>
+                    <span className="Stext">Assistant Manager</span>
+                    <span className="Stext">건설안전산업기사</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">강석현</span>
-                    <span className="MediumText">기술부 주임</span>
+                    <span className="LText">강석현</span>
+                    <span className="Mtext">기술부 주임</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Kang Seok-Hyun</span>
+                    <span className="Stext">Kang Seok-Hyun</span>
                   </PeopleItemTextCol>
                 </div>
               </div>
@@ -136,71 +136,71 @@ const PeopleComponent = () => {
           </PeopleItemBox2>
           <PeopleItemBox1>
             <div className="FlexM">
-              <span className="MediumText">Operation Staff</span>
-              <span className="FontL">운영진</span>
+              <span className="FontBs">Operation Staff</span>
+              <span className="FontLs">운영진</span>
             </div>
             <div className="FlexCol">
               <div className="FlexRow">
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">한재웅</span>
-                    <span className="MediumText">운영팀 팀장</span>
+                    <span className="LText">한재웅</span>
+                    <span className="Mtext">운영팀 팀장</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Han Jae Woong</span>
-                    <span className="SmallText">Team Leader</span>
+                    <span className="Stext">Han Jae Woong</span>
+                    <span className="Stext">Team Leader</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">김은민</span>
-                    <span className="MediumText">운영팀 차장</span>
+                    <span className="LText">김은민</span>
+                    <span className="Mtext">운영팀 차장</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">King Eun-Min</span>
-                    <span className="SmallText">Senior Manager</span>
+                    <span className="Stext">King Eun-Min</span>
+                    <span className="Stext">Senior Manager</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">조정은</span>
-                    <span className="MediumText">운영팀 과장</span>
+                    <span className="LText">조정은</span>
+                    <span className="Mtext">운영팀 과장</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Jo Jung-Eun</span>
-                    <span className="SmallText">Manager</span>
+                    <span className="Stext">Jo Jung-Eun</span>
+                    <span className="Stext">Manager</span>
                   </PeopleItemTextCol>
                 </div>
               </div>
               <div className="FlexRow">
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">김아영</span>
-                    <span className="MediumText">운영팀 대리</span>
+                    <span className="LText">김아영</span>
+                    <span className="Mtext">운영팀 대리</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Kim A-Young</span>
-                    <span className="SmallText">Assistant Manager</span>
+                    <span className="Stext">Kim A-Young</span>
+                    <span className="Stext">Assistant Manager</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">이찬희</span>
-                    <span className="MediumText">운영팀 대리</span>
+                    <span className="LText">이찬희</span>
+                    <span className="Mtext">운영팀 대리</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Lee Chan-Hee</span>
-                    <span className="SmallText">Management Support Dpt</span>
+                    <span className="Stext">Lee Chan-Hee</span>
+                    <span className="Stext">Management Support Dpt</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">이혜진</span>
-                    <span className="MediumText">운영팀 주임</span>
+                    <span className="LText">이혜진</span>
+                    <span className="Mtext">운영팀 주임</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">Kim Jung-Eum</span>
-                    <span className="SmallText">Manager</span>
+                    <span className="Stext">Kim Jung-Eum</span>
+                    <span className="Stext">Manager</span>
                   </PeopleItemTextCol>
                 </div>
               </div>
@@ -208,51 +208,51 @@ const PeopleComponent = () => {
           </PeopleItemBox1>
           <PeopleItemBox2>
             <div className="FlexM">
-              <span className="MediumText">Alliance</span>
-              <span className="FontL">얼라이언스</span>
+              <span className="FontBs">Alliance</span>
+              <span className="FontLs">얼라이언스</span>
             </div>
             <div className="FlexCol">
               <div className="FlexRow">
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">(주)수영로지콘</span>
-                    <span className="MediumText">김현수 수석</span>
+                    <span className="LText">(주)수영로지콘</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">-건축시공기술사/건설안전기술사</span>
-                    <span className="SmallText">-종합건설_품질안전</span>
+                    <span className="Stext">김현수 수석</span>
+                    <span className="Stext">-건축시공기술사/건설안전기술사</span>
+                    <span className="Stext">-종합건설_품질안전</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">DA구조기술사사무소</span>
+                    <span className="LText">DA구조기술사사무소</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">최효준 소장</span>
-                    <span className="SmallText">-건축구조기술사</span>
-                    <span className="SmallText">-구조검토 및 설계</span>
+                    <span className="Stext">최효준 소장</span>
+                    <span className="Stext">-건축구조기술사</span>
+                    <span className="Stext">-구조검토 및 설계</span>
                   </PeopleItemTextCol>
                 </div>
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">비움 건축사사무소</span>
+                    <span className="LText">비움 건축사사무소</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">백훈 소장</span>
-                    <span className="SmallText">-건축사/건축시공기술사</span>
-                    <span className="SmallText">-건축 및 인테리어 설계</span>
+                    <span className="Stext">백훈 소장</span>
+                    <span className="Stext">-건축사/건축시공기술사</span>
+                    <span className="Stext">-건축 및 인테리어 설계</span>
                   </PeopleItemTextCol>
                 </div>
               </div>
               <div className="FlexRow">
                 <div>
                   <PeopleItemTextRow>
-                    <span className="LargeText">(주)아키그린</span>
+                    <span className="LText">(주)아키그린</span>
                   </PeopleItemTextRow>
                   <PeopleItemTextCol>
-                    <span className="SmallText">장형제 소장</span>
-                    <span className="SmallText">-건축에너지인증</span>
-                    <span className="SmallText">-건축친환경인증</span>
+                    <span className="Stext">장형제 소장</span>
+                    <span className="Stext">-건축에너지인증</span>
+                    <span className="Stext">-건축친환경인증</span>
                   </PeopleItemTextCol>
                 </div>
               </div>
@@ -273,6 +273,9 @@ const PeopleContent = styled.div`
   transition: color ${({ theme }) => theme.transition};
   margin-top: 74px;
   letter-spacing: 0.1rem;
+  & .MarginB {
+    border-bottom: 2px solid ${({ theme }) => theme.border1};
+  }
   & span {
     padding: 7px;
     text-align: left;
@@ -287,64 +290,63 @@ const PeopleContent = styled.div`
   }
 
   & .FontB {
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: clamp(2.3rem, 2vw, 2rem);
+    font-family: Gb;
+    align-self: flex-start;
+    text-align: left;
+  }
+  & .FontBs {
+    font-size: clamp(1.5rem, 2vw, 1.3rem);
     font-family: Gb;
     align-self: flex-start;
     text-align: left;
   }
 
   & .FontM {
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: clamp(1rem, 2vw, 1.3rem);
     font-family: Gm;
     align-self: flex-start;
     text-align: left;
   }
 
   & .FontL {
-    font-size: clamp(0.9rem, 1.3vw, 1.2rem);
+    font-size: clamp(1.8rem, 2vw, 1.5rem);
+    font-family: Gl;
+    align-self: flex-start;
+    text-align: left;
+  }
+  & .FontLs {
+    font-size: clamp(1.5rem, 2vw, 1.3rem);
     font-family: Gl;
     align-self: flex-start;
     text-align: left;
   }
 
-  & .LargeText {
+  & .LText {
     font-family: Gb;
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: clamp(1rem, 2vw, 1rem);
 
-    @media (min-width: 768px) {
-      font-size: clamp(1rem, 1.5vw, 1.3rem);
-    }
-
-    @media (min-width: 1024px) {
-      font-size: clamp(1rem, 1.5vw, 1.3rem);
+    @media (max-width: 768px) {
+      font-size: clamp(1.4rem, 2vw, 1rem);
     }
   }
-  & .MediumText {
+  & .Mtext {
     font-family: Gm;
-    font-size: clamp(0.7rem, 1.2vw, 0.92rem);
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    align-self: center;
 
-    @media (min-width: 768px) {
-      font-size: clamp(0.7rem, 1.2vw, 0.92rem);
-    }
-
-    @media (min-width: 1024px) {
-      font-size: clamp(0.7rem, 1.2vw, 0.92rem);
+    @media (max-width: 768px) {
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
     }
   }
-  & .SmallText {
+  & .Stext {
     font-family: Gl;
-    font-size: clamp(0.5rem, 1.2vw, 0.86rem);
-
-    @media (min-width: 768px) {
-      font-size: clamp(0.5rem, 1.2vw, 0.86rem);
-    }
-
-    @media (min-width: 1024px) {
-      font-size: clamp(0.5rem, 1.2vw, 0.86rem);
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    padding-top: 8px;
+    @media (max-width: 768px) {
+      font-size: clamp(0.9rem, 2vw, 1.3rem);
     }
   }
-
-  font-size: 1rem;
 
   @media (max-width: 767px) {
     font-size: clamp(0.875rem, 2vw, 1.125rem);
@@ -382,7 +384,7 @@ const PeopleItemBox1 = styled.div`
     flex: 20%;
     /* border: 1px solid red; */
   }
-  & > div > span.MediumText {
+  & > div > span.Mtext {
     /* border: 1px solid black; */
   }
   & .FlexCol {
@@ -405,7 +407,10 @@ const PeopleItemBox1 = styled.div`
     flex: 1;
     /* border: 1px solid red; */
   }
-  & .FlexRow {
+  & .FlexRow > div {
+    @media (max-width: 768px) {
+      margin-top: 38px;
+    }
   }
   & > div {
     display: flex;
@@ -468,7 +473,7 @@ const PeopleItemBox2 = styled.div`
     flex: 20%;
     /* border: 1px solid red; */
   }
-  & > div > span.MediumText {
+  & > div > span.Mtext {
     /* border: 1px solid black; */
   }
   & .FlexCol {
@@ -491,7 +496,10 @@ const PeopleItemBox2 = styled.div`
     flex: 1;
     /* border: 1px solid red; */
   }
-  & .FlexRow {
+  & .FlexRow > div {
+    @media (max-width: 768px) {
+      margin-top: 38px;
+    }
   }
   & > div {
     display: flex;
