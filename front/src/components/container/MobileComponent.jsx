@@ -4,12 +4,12 @@ import Tilt from "react-parallax-tilt";
 import "aos/dist/aos.css";
 import Slider from "../function/Slider/Slider";
 import "../../font/font.css";
-import img1 from "../../img/1.png";
+import img1 from "../../img/3.png";
 import img2 from "../../img/2.jpg";
-import img3 from "../../img/3.png";
-import img4 from "../../img/1.png";
+import img3 from "../../img/2.png";
+import img4 from "../../img/3.png";
 import img5 from "../../img/2.jpg";
-import img6 from "../../img/3.png";
+import img6 from "../../img/2.png";
 
 const MobileComponent = ({
   scrollToTop,

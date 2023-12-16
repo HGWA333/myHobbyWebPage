@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import img1 from "../../../img/1.png";
+import img1 from "../../../img/3.png";
 import img2 from "../../../img/2.jpg";
-import img3 from "../../../img/3.png";
+import img3 from "../../../img/3.jpg";
 const imgs = [img1, img2, img3];
 const variants = {
   hidden: { opacity: 0 },
