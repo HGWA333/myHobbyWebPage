@@ -337,8 +337,8 @@ const PcContent = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin-top: 250px;
-
+      margin-top: 80px;
+      margin-bottom: 240px;
       width: 100%;
 
       & > :nth-child(1) {
@@ -351,7 +351,6 @@ const PcContent = styled.div`
       }
     }
     & .CoreContentItem2 {
-      margin-top: 350px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -381,24 +380,25 @@ const PcContent = styled.div`
           }
 
           & > :nth-child(1) {
-            font-size: clamp(1.3rem, 2vw, 1.7rem);
+            font-size: clamp(1.7rem, 2vw, 1.8rem);
           }
           & > :nth-child(2) {
             padding-bottom: 16px;
-            font-size: clamp(0.9rem, 1.7vw, 1.2rem);
+            font-weight: 900;
+            font-size: clamp(0.9rem, 2vw, 1.4rem);
           }
           & > :nth-child(4) {
             margin-top: 16px;
-            font-size: clamp(0.6rem, 1.2vw, 0.86rem);
+            font-size: clamp(1rem, 2vw, 1.3rem);
             letter-spacing: 0.3rem;
-            line-height: 1.2rem;
+            line-height: 1.8;
+            font-weight: 600;
           }
         }
       }
     }
     & .CoreContentItem3 {
-      margin-top: 450px;
-      margin-bottom: 250px;
+      margin-top: 300px;
       flex: 1 1;
       flex-basis: auto;
       display: flex;
@@ -492,8 +492,10 @@ const PcContent = styled.div`
   & .FontL {
     font-size: clamp(0.3rem, 1vw, 0.7rem);
     font-family: Gl;
+    font-weight: 600;
     align-self: flex-start;
     text-align: left;
+    margin-top: 10px;
     padding-top: 0.8rem;
   }
   & .FontL:hover {
@@ -526,16 +528,18 @@ const PcContent = styled.div`
       }
     }
     & .FontB {
-      font-size: clamp(1rem, 3vw, 1.5rem);
+      font-size: clamp(1.3rem, 2vw, 2rem);
       font-family: Gb;
       align-self: flex-start;
       text-align: left;
       padding-top: 1rem;
     }
+
     & .FontM {
       flex: 1 1;
       font-family: Gl;
-      font-size: clamp(0.5rem, 2vw, 0.8rem);
+      font-size: clamp(0.9rem, 2vw, 1.3rem);
+      font-weight: 600;
       text-align: left;
       align-self: flex-start;
       position: relative;

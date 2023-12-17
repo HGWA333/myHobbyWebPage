@@ -30,7 +30,7 @@ const MobileComponent = ({
   };
   return (
     <>
-      <PcContent>
+      <MobileContent>
         {/* {data.a}
         <p>{data && data.MobileComponent}</p> */}
         <div className="FlexBox">
@@ -77,7 +77,7 @@ const MobileComponent = ({
               <span className="FontB"> CORE VALUE</span>
               <span className="FontL"> 핵심가치</span>
             </div>
-            <div className="CoreContentItem2">
+            <div className="CoreContentItem2" data-aos={aosAnimation} data-aos-offset="0">
               <div className="CoreContentItem2Box">
                 <div className="CoreContentTextFlex">
                   <span className="FontB"> HONEST</span>
@@ -115,7 +115,7 @@ const MobileComponent = ({
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <div className="CoreContentItem3" onClick={serviceMan}>
+              <div className="CoreContentItem3" data-aos={aosAnimation} onClick={serviceMan}>
                 <span className="FontB"> 서비스 바로가기</span>
                 <span className="FontM"> Services</span>
               </div>
@@ -148,14 +148,14 @@ const MobileComponent = ({
             </Tilt>
           </div>
         </div>
-      </PcContent>
+      </MobileContent>
     </>
   );
 };
 
 export default MobileComponent;
 
-const PcContent = styled.div`
+const MobileContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,7 +392,7 @@ const PcContent = styled.div`
             font-size: clamp(1rem, 2vw, 1.3rem);
             letter-spacing: 0.3rem;
             line-height: 1.8;
-            font-weight: 500;
+            font-weight: 600;
           }
         }
       }
@@ -534,6 +534,7 @@ const PcContent = styled.div`
       text-align: left;
       padding-top: 1rem;
     }
+
     & .FontM {
       flex: 1 1;
       font-family: Gl;
