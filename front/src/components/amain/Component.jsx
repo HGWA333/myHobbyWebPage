@@ -15,7 +15,7 @@ import Inspection2Component from "../page/service/Inspection2/Components.jsx";
 import LegalComponent from "../page/service/legal/Components.jsx";
 import Test3Compoents from "../page/test/test3/Components.jsx";
 import FontText from "../page/test/test4/Compoents.jsx";
-
+import Footer from "../fixed/footer/Footer.jsx";
 import "../function/menu/modal.css";
 
 const MainComponent = ({
@@ -137,7 +137,7 @@ const MainComponent = ({
               <Route path="/diagnosis" element={<DiagnosisComponent />} />
               <Route path="/legal" element={<LegalComponent />} />
             </Routes>
-            {/* <div className="Footer">    </div> */}
+            <div className="Footer">{/* <Footer /> */}</div>
             {modalOpen == 1 && (
               <MenuBar
                 modalRef={modalRef}
@@ -225,10 +225,7 @@ const MainComponent = ({
               <Route path="/diagnosis" element={<DiagnosisComponent />} />
               <Route path="/legal" element={<LegalComponent />} />
             </Routes>
-            {/* <div className="Footer">
-              <button onClick={handleThemeToggle}>테마</button>
-              <Toggle />
-            </div> */}
+            <div className="Footer">{/* <Footer /> */}</div>
             {modalOpen == 1 && (
               <MenuBar
                 modalRef={modalRef}
@@ -314,12 +311,6 @@ const MainContents = styled.div`
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    /* position: fixed; */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    z-index: 100;
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
   }

@@ -95,10 +95,10 @@ const ModalStyle = styled.div`
     font-size: clamp(4rem, 3.8vw, 6rem);
     font-family: Gb;
     padding-top: 1rem;
-    color: ${({ theme }) => theme.one};
+    color: ${({ theme }) => theme.two};
   }
   & .FontB:hover {
-    color: ${({ theme }) => theme.btn2};
+    color: ${({ theme }) => theme.imghover};
     transform: scale(0.97);
     transition: 0.8s;
   }
@@ -110,7 +110,7 @@ const ModalStyle = styled.div`
     padding-top: 0.8rem;
   }
   & .FontM:hover {
-    color: ${({ theme }) => theme.two};
+    color: ${({ theme }) => theme.one};
     transform: scale(0.97);
     transition: 0.8s;
   }
@@ -122,7 +122,7 @@ const ModalStyle = styled.div`
     padding-top: 0.8rem;
   }
   & .FontL:hover {
-    color: ${({ theme }) => theme.two};
+    color: ${({ theme }) => theme.one};
     transform: scale(0.97);
     transition: 0.8s;
   }

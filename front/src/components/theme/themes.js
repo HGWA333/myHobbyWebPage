@@ -21,7 +21,8 @@ const lightTheme = {
   border1: `#FBFBF6`,
   underline1: `#f3cd6c`,
   underline2: `#EA5506`,
-  img1: img1,
+  imghover: `#f3cd6c`,
+  img1: img2,
 };
 
 const darkTheme = {
@@ -44,7 +45,8 @@ const darkTheme = {
   border1: `#0e1c2f`,
   underline1: `#EA5506`,
   underline2: `#f3cd6c`,
-  img1: img2,
+  imghover: `#EA5506`,
+  img1: img1,
 };
 
 export { lightTheme, darkTheme };

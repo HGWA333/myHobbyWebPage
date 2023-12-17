@@ -9,7 +9,7 @@ const AboutComponent = () => {
           <AboutItemBox1>
             <div>
               <span className="FontB">About</span>
-              <span className="FontL">고객사와 동반 성장하는 안전진단전문기관, (주)파드</span>
+              <span className="FontL ">고객사와 동반 성장하는 안전진단전문기관, (주)파드</span>
             </div>
           </AboutItemBox1>
           <AboutItemBox2>
@@ -19,11 +19,11 @@ const AboutComponent = () => {
             </div>
             <div className="FlexCol ">
               <AboutItemTextCol>
-                <span className="FontMs">
+                <span className="FontMs PaddingR MarginB">
                   (주)파드는 건축물에 대한 ‘안전점검 및 진단, 법원감정 및 하자진단’ 등을 주요 사업으로 하는 정부공인
                   안전진단전문기관입니다.
                 </span>
-                <span className="Stext">
+                <span className="Stext PaddingR">
                   ‘주식회사 파드’는 국민의 생명과 재산보호를 이념으로 건축물에 대한 ‘안전점검 및 진단, 내진성능평가,
                   하자진단 및 법원감정’ 등을 주요 사업으로 하는 국토교통부 지정 정부공인 안전진단전문기관입니다. 건축 전
                   과정에 대한 전문화된 기술력을 바탕으로 실효성 있는 안전지킴이시스템을 구축하여 건축물의 부실과 재해,
@@ -61,7 +61,7 @@ const AboutComponent = () => {
                     <span className="FontMs BackGroundC">총체적 기술서비스 제공</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
-                    <span className="Stext">
+                    <span className="Stext PaddingR">
                       ‘파드’는 건축 계약을 시작으로 설계, 인테리어, 시공, 유지관리 등 건축물의 전 생애주기에서 발생되는
                       문제에 대한종합적인 기술 서비스를 제공합니다.
                     </span>
@@ -72,7 +72,7 @@ const AboutComponent = () => {
                     <span className="FontMs BackGroundC">기술자로서의 윤리규범을 준수</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
-                    <span className="Stext">
+                    <span className="Stext PaddingR">
                       ‘파드’의 모든 구성원은 올바른 가치관을 확립하고 윤리규범의 실천에 솔선수범함으로써 선진적인 건축
                       문화 창달에 앞장서고 있습니다.
                     </span>
@@ -85,7 +85,7 @@ const AboutComponent = () => {
                     <span className="FontMs BackGroundC">건축물 특성화 분석</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
-                    <span className="Stext">
+                    <span className="Stext PaddingR">
                       ‘파드’는 교육시설, 의료시설, 판매시설, 문화시설 등 각 건축물 특성에 대한 이해를 바탕으로 최적화된
                       전문성과 총체적 기술진단서비스를 제공합니다.
                     </span>
@@ -96,7 +96,7 @@ const AboutComponent = () => {
                     <span className="FontMs BackGroundC">근본적인 해결방안 제시</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
-                    <span className="Stext">
+                    <span className="Stext PaddingR">
                       ‘파드’는 고객의 입장에서의 고민을 시작으로 발생된 문제에 대해 명확한 인과관계를 분석하여 가장
                       근본적이고, 실효성 있는 해결방안을 제시함으로써 고객의 시간과 비용을 절감합니다.
                     </span>
@@ -109,7 +109,7 @@ const AboutComponent = () => {
                     <span className="FontMs BackGroundC">고객을 위한 기술 가치 이상의 솔루션</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
-                    <span className="Stext">
+                    <span className="Stext PaddingR">
                       ‘파드’는 우리 고객에게 단기 프로젝트가 아닌 지속 가능한 신뢰 관계가 형성될 수 있도록 ‘고객 전용
                       자문시스템’을 구축하여 운영하고 있습니다.
                     </span>
@@ -158,24 +158,25 @@ const AboutComponent = () => {
 export default AboutComponent;
 
 const AboutContent = styled.div`
+  line-height: 1.5;
   overflow-x: hidden;
   width: 100%;
   background: ${({ theme }) => theme.btn4};
   transition: color ${({ theme }) => theme.transition};
   margin-top: 74px;
   letter-spacing: 0.1rem;
+  & .PaddingR {
+    padding-right: 30px;
+  }
   & .LineB {
     margin-bottom: 50px;
   }
-  & .MarginB {
-    border-bottom: 2px solid ${({ theme }) => theme.border1};
-  }
+
   & .WidthE {
     border: 1px solid red;
     padding-right: 100px;
   }
   & span {
-    padding: 7px;
     text-align: left;
   }
 
@@ -200,6 +201,7 @@ const AboutContent = styled.div`
     font-family: Gb;
     align-self: flex-start;
     text-align: left;
+    margin-bottom: 15px;
   }
   & .FontBs {
     font-size: clamp(1.5rem, 2vw, 1.3rem);
@@ -221,12 +223,13 @@ const AboutContent = styled.div`
     text-align: left;
     margin-bottom: 10px;
     @media (max-width: 768px) {
-      font-size: clamp(1.45rem, 2vw, 1.3rem);
-      line-height: 2;
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      text-align: center;
     }
   }
 
   & .FontL {
+    font-weight: 600;
     font-size: clamp(1.8rem, 2vw, 1.5rem);
     font-family: Gl;
     align-self: flex-start;
@@ -268,12 +271,16 @@ const AboutContent = styled.div`
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     & .AboutContentItem2 {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
       width: 100%;
+    }
+    & .MarginB {
+      margin-bottom: 50px;
+      text-align: left;
     }
   }
 `;
@@ -302,6 +309,7 @@ const AboutItemBox1 = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-left: 30px;
   }
   & .FlexCol > .FlexRow {
     width: 100%;
@@ -309,6 +317,7 @@ const AboutItemBox1 = styled.div`
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
+    gap: 50px;
   }
   & .FlexCol > .FlexRow > div {
     flex: 1;
@@ -353,6 +362,7 @@ const AboutItemBox1 = styled.div`
       flex-direction: column;
       justify-content: stretch;
       align-items: stretch;
+      padding-left: 10px;
     }
     & .FlexCol > .FlexRow {
       flex: 1;
@@ -397,6 +407,7 @@ const AboutItemBox2 = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-left: 30px;
   }
   & .FlexCol > .FlexRow {
     width: 100%;
@@ -439,6 +450,7 @@ const AboutItemBox2 = styled.div`
       flex-direction: column;
       justify-content: stretch;
       align-items: stretch;
+      padding-left: 10px;
     }
     & .FlexCol > .FlexRow {
       flex: 1;
@@ -464,6 +476,8 @@ const AboutItemTextRow = styled.div`
 
   & .BackGroundC {
     background-color: ${({ theme }) => theme.btn1};
+    margin: 0;
+    padding: 0;
   }
   @media (min-width: 768px) {
     margin-bottom: 10px;
