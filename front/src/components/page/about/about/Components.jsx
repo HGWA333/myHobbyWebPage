@@ -58,7 +58,7 @@ const AboutComponent = () => {
               <div className="FlexRow">
                 <div>
                   <AboutItemTextRow>
-                    <span className="FontMs">총체적 기술서비스 제공</span>
+                    <span className="FontMs BackGroundC">총체적 기술서비스 제공</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
                     <span className="Stext">
@@ -69,7 +69,7 @@ const AboutComponent = () => {
                 </div>
                 <div>
                   <AboutItemTextRow>
-                    <span className="FontMs">기술자로서의 윤리규범을 준수</span>
+                    <span className="FontMs BackGroundC">기술자로서의 윤리규범을 준수</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
                     <span className="Stext">
@@ -82,7 +82,7 @@ const AboutComponent = () => {
               <div className="FlexRow">
                 <div>
                   <AboutItemTextRow>
-                    <span className="FontMs">건축물 특성화 분석</span>
+                    <span className="FontMs BackGroundC">건축물 특성화 분석</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
                     <span className="Stext">
@@ -93,7 +93,7 @@ const AboutComponent = () => {
                 </div>
                 <div>
                   <AboutItemTextRow>
-                    <span className="FontMs">근본적인 해결방안 제시</span>
+                    <span className="FontMs BackGroundC">근본적인 해결방안 제시</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
                     <span className="Stext">
@@ -106,7 +106,7 @@ const AboutComponent = () => {
               <div className="FlexRow">
                 <div>
                   <AboutItemTextRow>
-                    <span className="FontMs">고객을 위한 기술 가치 이상의 솔루션</span>
+                    <span className="FontMs BackGroundC">고객을 위한 기술 가치 이상의 솔루션</span>
                   </AboutItemTextRow>
                   <AboutItemTextCol>
                     <span className="Stext">
@@ -233,6 +233,7 @@ const AboutContent = styled.div`
     text-align: left;
   }
   & .FontLs {
+    font-weight: 600;
     font-size: clamp(1.3rem, 2vw, 1.3rem);
     font-family: Gl;
     align-self: flex-start;
@@ -257,6 +258,7 @@ const AboutContent = styled.div`
     }
   }
   & .Stext {
+    font-weight: 600;
     font-family: Gl;
     font-size: clamp(0.9rem, 1vw, 1.5rem);
     line-height: 2.5;
@@ -458,7 +460,13 @@ const AboutItemTextRow = styled.div`
   flex-direction: row;
   text-align: left;
   width: 100%;
+  margin-bottom: 15px;
+
+  & .BackGroundC {
+    background-color: ${({ theme }) => theme.btn1};
+  }
   @media (min-width: 768px) {
+    margin-bottom: 10px;
     align-items: flex-start;
   }
 `;
@@ -469,6 +477,7 @@ const AboutItemTextCol = styled.div`
   text-align: left;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 50px;
   @media (min-width: 768px) {
     align-items: flex-start;
   }

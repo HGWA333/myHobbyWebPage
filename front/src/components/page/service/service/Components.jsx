@@ -7,8 +7,8 @@ const ServiceComponent = ({ textData, serviceSelected, setServiceSelected }) => 
         <div className="ServiceContentItem1">
           <ServiceItemBox1 className="MarginB">
             <div>
-              <span className="FontB PaddingL">SERVICES</span>
-              <span className="FontL PaddingL">(주)파드의 기술철학이 녹아든 서비스 분야</span>
+              <span className="FontB PaddingL PaddingB">SERVICES</span>
+              <span className="FontL PaddingL PaddingN">(주)파드의 기술철학이 녹아든 서비스 분야</span>
             </div>
           </ServiceItemBox1>
           <ServiceItemBox1>
@@ -24,7 +24,12 @@ const ServiceComponent = ({ textData, serviceSelected, setServiceSelected }) => 
                       transition={{ fontSize: { duration: 0.3 } }}
                     >
                       <div className={`ServiceFont FontM PaddingL`}>
-                        <span className={` ${i === serviceSelected ? "UnderLine" : ""}`}> {title}</span>
+                        <span> {title} </span>
+                        {4 === serviceSelected ? (
+                          <span className={` ${i === serviceSelected ? "UnderLine1" : ""}`}> </span>
+                        ) : (
+                          <span className={` ${i === serviceSelected ? "UnderLine" : ""}`}> </span>
+                        )}{" "}
                       </div>
                     </div>
                   );
@@ -196,31 +201,25 @@ const ServiceContent = styled.div`
     font-family: Gl;
     align-self: flex-start;
     text-align: left;
+    font-weight: 600;
   }
   & .FontLs {
     font-size: clamp(1.5rem, 2vw, 1.3rem);
     font-family: Gl;
     align-self: flex-start;
     text-align: left;
+    font-weight: 600;
     margin-top: 10px;
   }
 
   & .LText {
     font-family: Gb;
     font-size: clamp(1rem, 2vw, 1rem);
-
-    @media (max-width: 768px) {
-      font-size: clamp(1.4rem, 2vw, 1rem);
-    }
   }
   & .Mtext {
     font-family: Gm;
     font-size: clamp(0.7rem, 1vw, 1rem);
     align-self: center;
-
-    @media (max-width: 768px) {
-      font-size: clamp(0.85rem, 1.5vw, 1rem);
-    }
   }
   & .Stext {
     font-family: Gl;
@@ -228,16 +227,24 @@ const ServiceContent = styled.div`
     padding-top: 8px;
     padding-left: 50px;
     padding-right: 50px;
-    @media (max-width: 768px) {
+  }
+  @media (max-width: 1280px) {
+    & .Stext {
       padding-top: 0px;
       padding-left: 0px;
       padding-right: 0px;
       font-size: clamp(0.9rem, 2vw, 1.3rem);
     }
-  }
-
-  @media (max-width: 767px) {
-    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    & .LText {
+      font-size: clamp(1.4rem, 2vw, 1rem);
+    }
+    & .Mtext {
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
+    }
+    & .FontM {
+      font-size: clamp(1.3rem, 2vw, 1rem);
+      font-weight: 600;
+    }
     & .ServiceContentItem2 {
       flex-direction: column;
       align-items: flex-start;
@@ -246,12 +253,35 @@ const ServiceContent = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-  }
-
-  @media (min-width: 1024px) {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  @media (max-width: 768px) {
+    & .Stext {
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      font-size: clamp(0.9rem, 2vw, 1.3rem);
+    }
+    & .LText {
+      font-size: clamp(1.4rem, 2vw, 1rem);
+    }
+    & .Mtext {
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
+    }
+    & .FontM {
+      font-size: clamp(1.3rem, 2vw, 1rem);
+      font-weight: 600;
+    }
+    & .ServiceContentItem2 {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    & .FontB {
+      font-size: clamp(2rem, 2vw, 1.5rem);
+    }
+    & .FontL {
+      font-size: clamp(0.81rem, 2vw, 3rem);
+    }
   }
 `;
 
@@ -289,11 +319,7 @@ const ServiceItemBox1 = styled.div`
   & .FlexCol > .FlexRow > div {
     flex: 1;
   }
-  & .FlexRow > div {
-    @media (max-width: 768px) {
-      margin-top: 38px;
-    }
-  }
+
   & > div {
     display: flex;
     flex-direction: column;
@@ -304,20 +330,33 @@ const ServiceItemBox1 = styled.div`
       margin-bottom: 10px;
       text-align: left;
     }
+    & > div > div > .UnderLine {
+      padding-left: 30px;
+      text-align: left;
+    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
-    align-items: stretch;
-    justify-items: stretch;
+    align-items: center;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     & > div {
       flex: 1;
     }
+    & .FlexRow > div {
+      margin-top: 38px;
+    }
     & .FlexM {
-      flex: 100%;
+      flex: 1;
+    }
+    & .FontB,
+    & .FlexL {
+      align-self: center;
     }
     & .FlexCol {
-      flex: 100%;
+      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: stretch;
@@ -332,6 +371,33 @@ const ServiceItemBox1 = styled.div`
         justify-content: stretch;
         align-items: stretch;
       }
+    }
+
+    & .PaddingB,
+    & .PaddingN,
+    & .PaddingL {
+      padding: 0;
+      padding-right: 0;
+    }
+    & .PaddingB {
+      padding-bottom: 30px;
+    }
+    & .PaddingN {
+      line-height: 2;
+    }
+    & > div {
+      & > div {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    & .PaddingB {
+      padding-bottom: 20px;
+    }
+    & .PaddingN {
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 `;
@@ -369,16 +435,12 @@ const ServiceItemBox2 = styled.div`
   & .FlexCol > .FlexRow > div {
     flex: 1;
   }
-  & .FlexRow > div {
-    @media (max-width: 768px) {
-      margin-top: 38px;
-    }
-  }
+
   & > div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
+    padding-left: 10px;
     margin-bottom: 10px;
 
     & > div {
@@ -387,7 +449,7 @@ const ServiceItemBox2 = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
     align-items: stretch;
     justify-items: stretch;
@@ -396,6 +458,9 @@ const ServiceItemBox2 = styled.div`
     }
     & .FlexM {
       flex: 100%;
+      margin: 0 auto;
+      padding-left: 50px;
+      padding-right: 50px;
     }
     & .FlexCol {
       flex: 100%;
@@ -403,6 +468,9 @@ const ServiceItemBox2 = styled.div`
       flex-direction: column;
       justify-content: stretch;
       align-items: stretch;
+    }
+    & .FlexRow > div {
+      margin-top: 38px;
     }
     & .FlexCol > .FlexRow {
       flex: 1;
@@ -425,7 +493,7 @@ const ServiceItemBox2 = styled.div`
 //   text-align: left;
 //   width: 100%;
 
-//   @media (min-width: 768px) {
+//   @media (min-width: 1280px) {
 //     align-items: flex-start;
 //   }
 // `;
@@ -436,8 +504,16 @@ const ServiceItemTextCol = styled.div`
   text-align: left;
   flex-direction: column;
   width: 100%;
-  @media (min-width: 768px) {
-    align-items: flex-start;
+  @media (max-width: 1280px) {
+    align-items: center;
+    justify-content: center;
+
+    & .PaddingR,
+    & .PaddingL {
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 50px;
+    }
   }
 `;
 const ServiceMainFlexCol = styled.div`
@@ -446,41 +522,73 @@ const ServiceMainFlexCol = styled.div`
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     align-items: flex-start;
   }
 `;
 
 const ServiceFlexRow = styled.div`
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
+
+  & .ServiceFont {
+    padding-left: 60px;
+  }
   & .UnderLine {
+    width: 80%;
     border-bottom: 2px solid ${({ theme }) => theme.underline1};
   }
+  & .UnderLine1 {
+    border-bottom: 2px solid ${({ theme }) => theme.underline1};
+    width: 40%;
+  }
+
   & .ServiceFlexR {
     flex: 1 1;
     flex-wrap: wrap;
-    padding-right: 30px;
+    padding-right: 10px;
+    padding-left: 50px;
   }
-
+  & .ServiceFlexR .PaddingL {
+    padding-left: 50px;
+  }
   & .ServiceFont {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+    padding: 0;
     color: ${({ theme }) => theme.two};
     transition: color ${({ theme }) => theme.transition};
+    & span {
+      flex: 1;
+    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    & .ServiceFont {
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+
+    & .UnderLine,
+    & .UnderLine1 {
+      width: 100%;
+    }
+  }
+  & .ServiceFlexR .PaddingL {
+    padding-left: 0px;
   }
 `;
 const ServiceFlexCol = styled.div`
@@ -491,7 +599,7 @@ const ServiceFlexCol = styled.div`
   text-align: center;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     align-items: flex-start;
   }
 `;

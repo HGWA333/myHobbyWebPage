@@ -314,12 +314,14 @@ const PeopleContent = styled.div`
     font-family: Gl;
     align-self: flex-start;
     text-align: left;
+    font-weight: 600;
   }
   & .FontLs {
     font-size: clamp(1.5rem, 2vw, 1.3rem);
     font-family: Gl;
     align-self: flex-start;
     text-align: left;
+    font-weight: 600;
   }
 
   & .LText {
@@ -340,6 +342,7 @@ const PeopleContent = styled.div`
     }
   }
   & .Stext {
+    font-weight: 600;
     font-family: Gl;
     font-size: clamp(0.9rem, 1vw, 1.5rem);
     padding-top: 8px;
@@ -539,7 +542,9 @@ const PeopleItemTextRow = styled.div`
   flex-direction: row;
   text-align: left;
   width: 100%;
+  margin-bottom: 15px;
   @media (min-width: 768px) {
+    margin-bottom: 10px;
     align-items: flex-start;
   }
 `;
@@ -550,6 +555,7 @@ const PeopleItemTextCol = styled.div`
   text-align: left;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 50px;
   @media (min-width: 768px) {
     align-items: flex-start;
   }
